@@ -19,11 +19,11 @@ class IdAttribute:
         """
         return getattr(instance, self.name, None)
 
-    def __set__(self, instance, value:UUID):
+    def __set__(self, instance, value:int):
         """
 
         """
-        if isinstance(value, UUID):
+        if isinstance(value, int):
             setattr(instance, self.name, value)
         else:
             raise ValidationError
