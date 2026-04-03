@@ -7,12 +7,26 @@
  <pre>
     ├── lab                                    # Кодовая база вашей лабораторной работы
     │   ├── src/                               # Исходный код
-        │   ├── main.py                        # Главный исполняемый файла
-        │   ├── task.py                        # файл содержащий класс Task
+        │   ├── cat_function.py                # Реализация команды cat для просмотра содержиого файла
+        │   ├── client.py                      # файл реализующий различных клиентов для SourceFromWeb
+        │   ├── generator.py                   # Файл содержащий функции генерации тестовых массивов с числами
+        │   ├── main.py                        # Главный исполняемый файл
+        │   ├── Source.py                      # файл содержащий шаблон источника тасков
+        │   ├── SourceFromFile.py              # источник тасков из текстового файла
+        │   ├── SourceFromGenerator.py         # источник тасков полученных блягодаря случайной генерации
+        │   ├── SourceFromWeb.py               # источник тасков из интеренета
+        │   ├── Task.py                        # файл содержащий класс Task
+        │   ├── task_manager.py                # файл содержащий функцию, которая получает таски из любого источника, ведущего себя
         │   ├── descriptors.py                 # файл содержащий дескрипторы
         │   ├── errors.py                      # файл содержащий ошибки, которые возвращают дескрипторы
     │   ├── tests/                             # Unit тесты
-        │   ├── test_task.py                   # тысты для Task
+        │   ├── test_task.py                   # тесты для Task
+        │   ├── test_cat_function.py           # тесты для cat_function
+        │   ├── test_generator.py              # тесты для генераторов
+        │   ├── test_source_from_file.py       # тесты для source_from_file
+        │   ├── test_source_from_generator.py  # тесты для source_from_generator
+        │   ├── test_source_from_web.py        # тесты для source_from_web
+        │   ├── test_task_manager.py           # тесты для task_manager
     │   ├── requirements.txt                   # зависимости вашего проекта
     │   ├── report.pdf                         # Отчет
     │   ├── .gitignore                         # git ignore файл

@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Any
-from descriptors import IdAttribute, PriorityAttribute, StatusAttribute
-from errors import ValidationError
+from src.descriptors import IdAttribute, PriorityAttribute, StatusAttribute
+from src.errors import ValidationError
 
 
 class Task:

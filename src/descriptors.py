@@ -1,6 +1,4 @@
-from uuid import UUID
-
-from errors import ValidationError
+from src.errors import ValidationError
 
 
 class IdAttribute:
