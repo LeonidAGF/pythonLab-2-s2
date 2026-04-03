@@ -1,5 +1,6 @@
-from src.power import power_function
-from src.constants import SAMPLE_CONSTANT
+import uuid
+
+from task import Task
 
 
 def main() -> None:
@@ -8,13 +9,15 @@ def main() -> None:
     :return: Данная функция ничего не возвращает
     """
 
-    target, degree = map(int, input("Введите два числа разделенные пробелом: ").split(" "))
-
-    result = power_function(target=target, power=degree)
-
-    print(result)
-
-    print(SAMPLE_CONSTANT)
+    t = Task(uuid.uuid4(),"dgfgjhbknjlm",1)
+    print(t.description)
+    print(t.is_ready)
+    try:
+        t.status = 'ready1'
+    except Exception as e:
+        print(e)
+    t.status = 'ready'
+    print(t.is_ready)
 
 if __name__ == "__main__":
     main()
